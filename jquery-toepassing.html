@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Wakker Worden</title>
+<script
+src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js">
+</script>
+<link rel="stylesheet"
+href="https://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+<script type="text/javascript">
+$(document).ready(function() {
+$("#knop").click(function() {
+var naam = $("#idTekstveld1").val();
+var wakkerworden = $("#idTekstveld2").val();
+window.alert(
+"Hoi, " + naam +
+", wij kunnen u dus morgen wakker maken met " + wakkerworden 
+);
+});
+});
+
+$(function() {
+        $("#accordion").accordion();
+        });
+
+</script>
+</head> 
+<body>
+<div id="accordion">
+    <h3> Mij mag je wakker maken voor..</h3>
+        <div>
+        <form>
+            Wat is uw naam?
+            <input type="text" id="idTekstveld1"><br><br>
+            Waarvoor mag iemand uw wakker maken ?
+            <input type="text" id="idTekstveld2"><br><br>
+            <input id="knop" name="knop" type="button"
+            value="Volgende">
+            </form>
+        </div>
+    <h3> 4 voordelen van vroeg opstaan.</h3>
+        <div>
+    <p><h5>1. Meer tijd voor jezelf</h5> Een half uur eerder opstaan betekent een half uur meer tijd voor jezelf. Je krijgt de kans om écht wakker te worden voordat je doorraast in de dagelijkse verplichtingen. Zo kun je in de ochtend iets doen wat je rust geeft of waar je blij van wordt. Denk aan yoga, journallen, lezen of wandelen. Activiteiten waar je anders misschien niet eens aan toe komt.<br><br></p>
+    <p><h5>2. Je bent Gezonder</h5>Ochtendmensen nemen meer tijd voor hun ontbijt en hebben hierdoor gedurende de dag minder last van snaaitrek. Mensen die eerder opstaan eten meer fruit en minder fastfood dan avondmensen. Het BMI van ochtendmensen is daardoor lager blijkt uit een onderzoek van het Amerikaanse National Institutes of Health. Kun je een ochtendmens worden als je van nature een avondmens bent? Daar schreven we over in dit artikel.<br><br></p>
+    <p><h5>3. Je bent productiever</h5>Heb je in de ochtend eerst een flinke kop koffie nodig om op te starten? Als je vroeg opstaat dan komt de energie vanzelf. Een gezond ontbijt voorziet je lichaam van alle voedingstoffen voor een energieke start en de rust van de ochtend zorgt voor rust in je hoofd. Eerdat je op je werk verschijnt staan je hersenen al helemaal aan. Die trage start met een flinke slok koffie is verleden tijd. <br><br></p>
+    <p><h5>4. Minder stress</h5>Wij Nederlanders zijn kampioen in haasten. Elke ochtend een race tegen de klok om nét op tijd de deur uit te gaan. Stressvoller kun je de dag niet beginnen. Eerder opstaan staat gelijk aan minder stress. Fijn, want deze onverwachte klachten van stress kun je zo voorkomen. Opstaan voordat de rest van de wereld wakker zorgt voor rust en stilte. Tijd om na te denken én wakker te worden.<br><br></p>
+    </div>
+</body>
+</html>
